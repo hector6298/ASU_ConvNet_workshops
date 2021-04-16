@@ -1,4 +1,7 @@
 from itertools import compress
+import os
+import numpy as np
+
 def clean_annotation(annotations, train_dir, test_dir):
   files = []
   for r, d, f in os.walk(train_dir):
@@ -27,18 +30,18 @@ def generate_train_test_filenames():
 
     print("Generating Train-Test split")
     TRAINFILE = '/content/train_split_v3.txt'
-    ESTFILE = '/content/test_split_v3.txt'
+    TESTFILE = '/content/test_split_v3.txt'
     dataset_train = _process_csv_file(TRAINFILE)
     dataset_test = _process_csv_file(TESTFILE)
     datasets = {'normal': [], 'pneumonia': [], 'COVID-19': []}
     for l in dataset_train:
-    entry = l.split()
-    entry[1] = f"data/train/{entry[1]}"
-    datasets[entry[2]].append(entry)
+        entry = l.split()
+        entry[1] = f"data/train/{entry[1]}"
+        datasets[entry[2]].append(entry)
     for l in dataset_test:
-    entry = l.split()
-    entry[1] = f"data/test/{entry[1]}"
-    datasets[entry[2]].append(entry)
+        entry = l.split()
+        entry[1] = f"data/test/{entry[1]}"
+        datasets[entry[2]].append(entry)
 
     break_point_normal = int(len(datasets['normal'])/5)
     break_point_covid = int(len(datasets['COVID-19'])/5)
