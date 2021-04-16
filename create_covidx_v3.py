@@ -35,8 +35,8 @@ actmed_imgpath = '/content/Actualmed-COVID-chestxray-dataset/images'
 actmed_csvpath = '/content/Actualmed-COVID-chestxray-dataset/metadata.csv'
 
 # path to covid-19 dataset from https://www.kaggle.com/tawsifurrahman/covid19-radiography-database
-sirm_imgpath = '/content/COVID-19 Radiography Database/COVID-19'
-sirm_csvpath = '/content/COVID-19 Radiography Database/COVID-19.metadata.xlsx'
+sirm_imgpath = '/content/COVID-19_Radiography_Dataset/COVID'
+sirm_csvpath = '/content/COVID-19 Radiography Database/COVID.metadata.xlsx'
 
 # path to https://www.kaggle.com/c/rsna-pneumonia-detection-challenge
 rsna_datapath = '/content'
