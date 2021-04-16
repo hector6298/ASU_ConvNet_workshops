@@ -20,4 +20,4 @@ mkdir data/train
 mkdir data/test
 mkdir /content/logs
 
-python3 ASU_ConvNet_workshops/create_covidx_v3.py
+python3 ASU_ConvNet_workshops/1_dataset_prep/create_covidx_v3.py
