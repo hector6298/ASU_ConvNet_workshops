@@ -20,4 +20,4 @@ mkdir data/train
 mkdir data/test
 mkdir /content/logs
 
-python3 "/content/drive/My Drive/COVID-Net-master/COVID-Net-master/create_covidx_v3.py"
+python3 ASU_ConvNet_workshops/create_covidx_v3.py
