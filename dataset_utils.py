@@ -52,3 +52,5 @@ def generate_train_test_filenames():
     print("Cleaning test annotations...")
     annotations_test, fileste = clean_annotation(test_set[0], "data/train", "data/test")
     print('done!')
+
+    return annotations_train, annotations_test
