@@ -6,9 +6,9 @@ pip3 -q install --upgrade kaggle
 mkdir /root/.kaggle
 echo '{"username":"hector6298","key":"724778e3045b27ede8002c9f01b9da72"}' > /root/.kaggle/kaggle.json
 
-git -q clone https://github.com/ieee8023/covid-chestxray-dataset.git
-git -q clone https://github.com/agchung/Figure1-COVID-chestxray-dataset
-git -q clone https://github.com/agchung/Actualmed-COVID-chestxray-dataset
+git  clone https://github.com/ieee8023/covid-chestxray-dataset.git
+git  clone https://github.com/agchung/Figure1-COVID-chestxray-dataset
+git  clone https://github.com/agchung/Actualmed-COVID-chestxray-dataset
 kaggle datasets download -d "tawsifurrahman/covid19-radiography-database"
 kaggle competitions download -c "rsna-pneumonia-detection-challenge" 
 unzip rsna-pneumonia-detection-challenge.zip
