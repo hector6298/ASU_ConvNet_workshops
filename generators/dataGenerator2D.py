@@ -47,7 +47,7 @@ def apply_augmentation(img):
     return img
 
 
-class BalanceCovidDataset(Sequence):
+class BalanceCovidDataset(tf.keras.utils.Sequence):
     'Generates data for Keras'
 
     def __init__(
