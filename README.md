@@ -23,3 +23,10 @@ How to feed your neural network for real world applications.
 3) Run the cells
 
 
+## Part 2: Neural network definition and fitting
+
+How to use out of the box keras convolutional neural netowrks for you image classification task.
+
+1) Refer to CNNDefAndFit.ipynb notebook
+2) Upload to [google colab](colab.research.google.com)
+3) Run the cells
